@@ -15,4 +15,3 @@ buttonDelete.addEventListener('click', function () {
         valueCount.textContent = counterValue;
     }
 });
-
