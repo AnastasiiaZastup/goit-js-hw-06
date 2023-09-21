@@ -8,19 +8,18 @@ const ingredients = [
 ];
 
 const firstList = document.querySelector('#ingredients');
+const listForLi = document.createElement('li');
 
 const secondList = ingredients.map((ingredient) => {
 
   const addLi = document.createElement('li');
-  addLi.textContent = ingredient;
   addLi.classList.add('item');
+  addLi.textContent = `${ingredient}`;
 
   return addLi;
 
 });
-
-secondList.forEach((li) => {
-  firstList.appendChild(li);
-});
+  
+firstList.append(...secondList);
 
 console.log(firstList);

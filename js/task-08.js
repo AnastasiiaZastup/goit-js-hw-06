@@ -18,10 +18,9 @@ function onsubmit(evt) {
     console.log(data);
 
     if (!email.value || !password.value) {
-    alert('Please fill in all fields.');
+    alert;
     }
     
-    elForm.reset();
     
 }
 
